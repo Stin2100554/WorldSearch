@@ -1,0 +1,129 @@
+/*Core Formatting*/
+#mainWrapper {
+	max-width:100%;
+	min-height:33vh;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+#mainLimiter {
+	width:100%; /*go as wide as possible*/
+	min-width:200px; /*don't go smaller than this.*/
+	max-width:900px; /*don't go wider than this.*/
+	align-self:center;
+}
+body {
+	font-family: Helvetica, sans-serif;
+	background-color:#EFEFEF;
+}
+/*Header Logo*/
+#logo {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+#logo img {
+	max-height:200px;
+}
+
+/*Navigation Styling*/
+#navWrapper {
+	width:100%;
+	padding:2px;
+	flex:1;
+}
+
+#navButtons {
+	width:100%;
+	display:flex;
+	flex-direction:row;
+}
+
+.navButton {
+	/*Background Gradient*/
+	background: rgb(97,81,50);
+	background: linear-gradient(180deg, rgba(97,81,50,1) 0%, rgba(124,105,59,1) 38%, rgba(101,68,8,1) 100%); 
+	/*Formatting*/
+	margin:0px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:50px;
+	color:#FFF;
+	border: 2px outset #45290E;
+	/*Accessibility*/
+	cursor:pointer;
+	
+	/*pseudobutton sizing*/
+	width:100%;
+	height:50px;
+}
+.navButton:first-child {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+.navButton:last-child {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.navButton:hover {
+	opacity:0.9;
+}
+
+/*Shared content view styles*/
+#contentWrapper {
+	display:flex;
+	width:100%;
+}
+.contentTitle {
+	text-align:center;
+	font-size:56px;
+}
+
+/*Map View Styling*/
+#mapImage {/*styles for map image*/
+	/*to do something*/
+}
+
+#infoboxWrapper {/*styles for infobox div*/
+	width:100%;
+	background-color:#EEE;
+	max-height:400px;
+}
+#infoboxWrapper dt {
+	font-size:20px;
+}
+#infoboxWrapper dd {
+	font-style:italic;
+}
+#infobox {
+	padding:10px;
+	height:100%;
+}
+/*mobile styling adjustments*/
+@media only screen and (max-width:600px) {
+	#contentWrapper {
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+	}
+	#infoboxWrapper {
+		width:100%;
+	}
+}
+/*minor mobile adjustments*/
+@media only screen and (max-width:800px) {
+	.navButton {
+		height:100px;
+		line-height:100px;
+	}
+}
+
+/*Footer Styling*/
+#footerWrapper {
+	background-color:#fff;
+	text-align:center;
+	min-height:30px;
+	height:10vh;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+}

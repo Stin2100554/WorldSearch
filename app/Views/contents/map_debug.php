@@ -7,7 +7,7 @@
 	<div id="infoboxWrapper">
 		<div id="infobox">
 		<hr>
-			<h2>Date</h4>
+			<h2>[#000] Date</h4>
 		<hr>
 		<dl>
 			<dt>Longitude</dt>
