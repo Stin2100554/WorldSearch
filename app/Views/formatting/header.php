@@ -18,10 +18,9 @@
 			</div>
 			<div id="navWrapper">
 				<div id="navButtons">
-					<div class="navButton"><b>Home</b></div>
-					<div class="navButton"><b>Today</b></div>
-					<div class="navButton"><b>Archive</b></div>
-					<div class="navButton"><b>Contact</b></div>
+					<div class="navButton" onclick="window.location.href = '<?=base_url('index.php/about')?>'"><b>Home</b></div>
+					<div class="navButton" onclick="window.location.href = '<?=base_url('index.php/about/debug')?>'"><b>Today</b></div>
+					<div class="navButton" onclick="window.location.href = '<?=base_url('index.php/about/debug')?>'"><b>Archive</b></div>
 				</div>
 			</div>
 		</div>

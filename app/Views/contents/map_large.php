@@ -1,7 +1,12 @@
 <h1 class="contentTitle">Debug Map</h1>
 <div id="contentWrapper">
 	<div id="mapImage">
-		<img src="<?=base_url('images/fallbackImage.jpg')?>" alt="backup">
+		<img src="http://maps.googleapis.com/maps/api/streetview?size=400x400
+		&location=-54.2819102,-36.5086144
+		&fov=40
+		&heading=271
+		&pitch=10
+		&key=AIzaSyAy338sKY_Uof2855ufwF9eOjLXJC_Y_RM">
 	</div>
 
 	<div id="infoboxWrapper">
