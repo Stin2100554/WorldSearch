@@ -1,7 +1,7 @@
 <h1 class="contentTitle">Map Viewer</h1>
 <div id="contentWrapper">
 	<div id="mapImage">
-		<img src="http://maps.googleapis.com/maps/api/streetview?size=400x400
+		<img src="https://maps.googleapis.com/maps/api/streetview?size=400x400
 		&location=<?= esc($maps['LAT'])?>,<?= esc($maps['LNG'])?>
 		&fov=<?= esc($maps['FOV'])?>
 		&heading=<?= esc($maps['HEADING'])?>
@@ -22,6 +22,8 @@
 			<dt>Country</dt>
 			<dd><?= esc($maps['COUNTRY'])?></dd>
 		</dl>
+		<hr>
+		<a href="https://www.google.com/maps/search/<?= esc($maps['LAT'])?>,<?= esc($maps['LNG'])?>">View on Google Maps</a>
 		</div>
 	</div>
 </div>
