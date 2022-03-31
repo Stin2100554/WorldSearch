@@ -19,7 +19,6 @@
 		}*/
 		
 		/*Should not be usable in final version*/
-		/*(that means comment it out)*/
 		public function debug() {
 			echo view("formatting/header");
 			echo view("contents/map_debug");

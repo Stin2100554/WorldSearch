@@ -1,26 +1,26 @@
-<h1 class="contentTitle">Debug Map</h1>
+<h1 class="contentTitle">Map Viewer</h1>
 <div id="contentWrapper">
 	<div id="mapImage">
 		<img src="http://maps.googleapis.com/maps/api/streetview?size=400x400
-		&location=-54.2819102,-36.5086144
-		&fov=40
-		&heading=271
-		&pitch=10
+		&location=<?= esc($maps['LAT'])?>,<?= esc($maps['LNG'])?>
+		&fov=<?= esc($maps['FOV'])?>
+		&heading=<?= esc($maps['HEADING'])?>
+		&pitch=<?= esc($maps['PITCH'])?>
 		&key=AIzaSyAy338sKY_Uof2855ufwF9eOjLXJC_Y_RM">
 	</div>
 
 	<div id="infoboxWrapper">
 		<div id="infobox">
 		<hr>
-			<h2>Date</h4>
+			<h2>Date - <?= esc($maps['DATE'])?></h4>
 		<hr>
 		<dl>
-			<dt>Longitude</dt>
-			<dd>0.000000</dd>
 			<dt>Latitude</dt>
-			<dd>0.000000</dd>
+			<dd><?= esc($maps['LAT'])?></dd>
+			<dt>Longitude</dt>
+			<dd><?= esc($maps['LNG'])?></dd>
 			<dt>Country</dt>
-			<dd>Invalid Integer</dd>
+			<dd><?= esc($maps['COUNTRY'])?></dd>
 		</dl>
 		</div>
 	</div>
