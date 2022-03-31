@@ -9,16 +9,21 @@
 		
 		public function index() { /*index will just be the archive list*/
 			$model = model(ArchiveModel::class);
-			$data['maps'] = $model->getMaps();
+			$data['maps'] = $model->getMaps(null);
 			
 			echo view("formatting/header");
-			echo view("contents/history");
+			echo view("contents/history", $data);
 			echo view("formatting/footer");
 		}
 		
 		public function view($id = 1) { /*view entry by ID*/
 			$model = model(ArchiveModel::class);
-			$data['maps'] = $model->getMaps($id);
+			if ($id == "today") {
+				$data['maps'] = $model->findLatest();
+			} else {
+				$data['maps'] = $model->getMaps($id);
+			}
+			
 			
 			echo view("formatting/header");
 			echo view("contents/map_large", $data);
