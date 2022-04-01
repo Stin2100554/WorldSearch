@@ -34,7 +34,7 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => '2100554',
-        'password' => 'youshouldntseethis',
+        'password' => '', /*Cheers .gitignore!*/
         'database' => 'db2100554',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
