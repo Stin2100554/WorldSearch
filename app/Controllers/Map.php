@@ -29,5 +29,12 @@
 			echo view("contents/map_large", $data);
 			echo view("formatting/footer");
 		}
+		
+		public function ajaxView($id = 1) {
+			$model = model(archiveModel::class);
+			$data = $model->getMaps($id);
+			
+			print(json_encode($data));
+		}
 	}
 ?>

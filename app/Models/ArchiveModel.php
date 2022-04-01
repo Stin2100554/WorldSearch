@@ -6,8 +6,8 @@
 	class ArchiveModel extends Model {
 		protected $table = 'Locations';
 		
-		public function getMaps($id = 0) {
-			if ($id == 0) { /*if 0, retrieve all*/
+		public function getMaps($id = null) {
+			if ($id == null) { /*if null, retrieve all*/
 				return $this->findAll();
 			}
 			/*if given ID, select that entry and return it*/

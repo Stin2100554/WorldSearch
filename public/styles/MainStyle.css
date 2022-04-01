@@ -1,5 +1,6 @@
 /*Primary style sheet for the entire website.*/
 /*Many defined IDs in the HTML code have not been used, but can be used later on for future improvements.*/
+
 /*Core Formatting*/
 #mainWrapper {
 	max-width:100%;
