@@ -1,0 +1,21 @@
+/*Styesheet additions that change the base sheet*/
+body {
+	background-color: #1a1b1c !important;
+	color: #e8e8e8 !important;
+}
+#footerWrapper, #infoboxWrapper {
+	background-color: #404040 !important;
+}
+hr {
+	height: 1px !important;
+	background-color: #262626 !important;
+	border: none !important;
+}
+a {
+	color:#8e9aad !important;
+}
+.navButton {
+	background: rgb(48,44,37) !important;
+	background: linear-gradient(180deg, rgba(48,44,37,1) 0%, rgba(71,65,50,1) 38%, rgba(52,43,25,1) 100%) !important;
+	border: 2px outset rgba(52,43,25,1) !important;
+}
