@@ -7,8 +7,8 @@
 					<h4 class="arListCountry"><?= esc($eachMap['COUNTRY'])?></h4>
 					<p class="arListDate">Date Shown - <b><?= esc($eachMap['DATE'])?></b></p>
 					<p class="arListLocation"><i><?= esc($eachMap['LAT'])?>, <?= esc($eachMap['LNG'])?></i></p>
-					<a href="<?= base_url('index.php/map/view')?>/<?= esc($eachMap['ID'])?>">View full page</a> |
-					<button id="BTN<?= esc($eachMap['ID'])?>"onclick="getAJAXmap(<?= esc($eachMap['ID'])?>)">Preview Location</button>
+					<a href="<?= base_url('/map/view')?>/<?= esc($eachMap['ID'])?>">View full page</a> |
+					<button id="BTN<?= esc($eachMap['ID'])?>"onclick="getAJAXmap(<?= esc($eachMap['ID'])?>)">Preview Location</button><br>
 					<div id="IMG<?= esc($eachMap['ID'])?>">
 						
 					<hr>
@@ -20,8 +20,6 @@
 		<?php endif ?>
 	</div>
 </div>
-<!--Adding JQuery. Raw javascript AJAX hurts.-->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
 	function getAJAXmap(id = 1) {
 		var target = "IMG" + id;
