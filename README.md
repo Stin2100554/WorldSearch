@@ -1,8 +1,10 @@
-##WorldSearch Project Repo  
+## WorldSearch Project Repo  
 Sam Tindale, 2100554  
 6CS028 Assignment  
 
-#Requires a database table with the following format.  
+Located at https://mi-linux.wlv.ac.uk/~2100554/6CS028/WorldSearch/public/about
+
+# Requires a database table with the following format.  
 -Named "Locations"  
 --ID > int + Auto Increment  
 --DATE > Standard SQL date format  
